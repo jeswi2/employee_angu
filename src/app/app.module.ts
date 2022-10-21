@@ -9,6 +9,7 @@ import { RouterModule,Routes } from '@angular/router';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 
 
 const appRoutes:Routes=[
@@ -18,6 +19,9 @@ const appRoutes:Routes=[
   },
   {
     path:"add",component:AddemployeeComponent
+  },
+  {
+    path:"search",component:SearchemployeeComponent
   }
   
   
@@ -30,7 +34,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     AddemployeeComponent,
-    ViewemployeeComponent
+    ViewemployeeComponent,
+    SearchemployeeComponent
   ],
   imports: [
     BrowserModule,
